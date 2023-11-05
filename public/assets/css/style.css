@@ -2184,9 +2184,9 @@ label {
 
 .about-img-wrap img.main-img {
   border-radius: 50%;
-  width: 314px;
+  width: 400px;
   object-fit: cover;
-  height: 314px;
+  height: 400px;
   border: 5px solid var(--tg-white);
 }
 
@@ -3549,6 +3549,7 @@ label {
   margin-bottom: 40px;
   background: var(--tg-white);
   position: relative;
+  width: fit-content;
 }
 
 .features-item::before {
@@ -4319,6 +4320,7 @@ label {
   border-radius: 10px;
   padding: 25px 35px 35px;
   margin-bottom: 30px;
+  cursor: grab;
 }
 
 .services-content .content-top {
@@ -8381,6 +8383,7 @@ label {
   background: var(--tg-white);
   border-radius: 10px;
   margin-bottom: 30px;
+  height: 650px;
 }
 
 .blog-post-thumb {
@@ -8424,6 +8427,10 @@ label {
 .blog-post-content {
   padding: 25px 30px 30px;
   border-radius: 0 0 10px 10px;
+  display: flex;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .blog-post-content .tag {

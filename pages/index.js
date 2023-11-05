@@ -25,15 +25,16 @@ export default function Home5() {
                 <AboutTwo />
                 <Services />
                 <Counter />
-                <Project />
-                <Faq />
-                <Request />
-                <Team />
-                <Testimonial />
-                <Pricing />
-                <Contact />
+                {/* <Project /> */}
+                {/* <Faq /> */}
+                {/* <Request /> */}
+                {/* <Team /> */}
+                {/* <Testimonial /> */}
+                {/* need pricing in the /join page */}
+                {/* <Pricing /> */}
                 <Blog />
-                <Brand />
+                <Contact />
+                {/* <Brand /> */}
             </Layout>
         </>
     )
