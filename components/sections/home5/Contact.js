@@ -1,4 +1,53 @@
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import swal from "sweetalert";
+
 export default function Contact() {
+  const [sender, setSender] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [senderSubject, setSenderSubject] = useState("");
+  const [senderPhone, setSenderPhone] = useState("");
+  const [senderEmail, setSenderEmail] = useState("");
+  const [messageClient, setMessageClient] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    if (
+      senderEmail !== "" &&
+      sender !== "" &&
+      senderSubject !== "" &&
+      messageClient !== ""
+    ) {
+      emailjs
+        .send(
+          "service_mk916rn",
+          "template_5ifw0ck",
+          {
+            from_name: sender,
+            from_email: senderEmail,
+            from_subject: senderSubject,
+            message: messageClient,
+          },
+          "7pan3UyznhLH6JQvS"
+        )
+        .then(() => {
+          // window.location.reload(false);
+          setIsLoading(false);
+          swal("Sent!", "Your message was sent successfully!", "success").then(
+            () => {
+              setSender("");
+              setSenderSubject("");
+              setSenderEmail("");
+              setMessageClient("");
+              setSenderPhone("");
+            }
+          );
+        });
+    } else {
+      setIsLoading(false);
+      swal("Oups!", "Empty fields are not allowed! 🤕", "error");
+    }
+  };
   return (
     <>
       <section
@@ -27,31 +76,67 @@ export default function Contact() {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="text" placeholder="Name *" />
+                        <input
+                          type="text"
+                          placeholder="Full Name *"
+                          name="name"
+                          value={sender}
+                          onChange={(e) => setSender(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="email" placeholder="E-mail *" />
+                        <input
+                          type="email"
+                          placeholder="E-mail *"
+                          value={senderEmail}
+                          name="email"
+                          onChange={(e) => setSenderEmail(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="number" placeholder="Phone *" />
+                        <input
+                          type="text"
+                          placeholder="Phone *"
+                          value={senderPhone}
+                          name="phone"
+                          onChange={(e) => setSenderPhone(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="text" placeholder="Subject *" />
+                        <input
+                          type="text"
+                          placeholder="Subject *"
+                          value={senderSubject}
+                          name="subject"
+                          onChange={(e) => setSenderSubject(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-md-12">
                       <div className="form-grp">
-                        <textarea placeholder="Comments *" />
+                        <textarea
+                          placeholder="Message *"
+                          name="message"
+                          onChange={(e) => setMessageClient(e.target.value)}
+                          value={messageClient}
+                        />
                       </div>
                     </div>
                   </div>
-                  <button type="submit">Submit Now</button>
+                  <button
+                    type="submit"
+                    onClick={(e) => {
+                      handleSubmit(e);
+                    }}
+                  >
+                    {isLoading ? "Sending..." : "Send"}
+                  </button>
                 </form>
               </div>
             </div>

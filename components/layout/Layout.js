@@ -139,10 +139,14 @@ export default function Layout({
         {children}
       </main>
 
-      {!footerStyle && <Footer1 />}
-      {footerStyle == 1 ? <Footer1 /> : null}
+      {/* {!footerStyle && */}
+        
+        <Footer1 />
+      
+       {/* } */}
+      {/* {footerStyle == 1 ? <Footer1 /> : null}
       {footerStyle == 2 ? <Footer2 /> : null}
-      {footerStyle == 3 ? <Footer3 /> : null}
+      {footerStyle == 3 ? <Footer3 /> : null} */}
 
       <BackToTop />
     </>

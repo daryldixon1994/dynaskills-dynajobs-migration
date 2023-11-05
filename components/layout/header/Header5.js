@@ -93,7 +93,7 @@ export default function Header5({
                   <nav className="menu-nav ">
                     <div className="logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo.png" alt="Logo" />
+                        <img src="/assets/img/logo/logo2.png" alt="Logo"  />
                       </Link>
                     </div>
                     <div className="navbar-wrap main-menu d-none d-lg-flex">

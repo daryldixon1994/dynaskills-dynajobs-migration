@@ -645,12 +645,15 @@ label {
   justify-content: flex-start;
 }
 
-.logo img,
-.f-logo img,
+
+
 .fw-logo img {
   max-height: 29px;
 }
+.f-logo img, .logo img {
+  max-height: 59px;
 
+}
 .navbar-wrap {
   display: flex;
   flex-grow: 1;
