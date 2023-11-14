@@ -10,15 +10,11 @@ export default function About() {
             <div className="col-lg-5">
               <div className="about-img-wrap">
                 <img
-                  src="/assets/img/images/about_img01-1.svg"
+                  src="/assets/img/images/about_img01.png"
                   alt=""
                   className="main-img"
                 />
-                <img
-                  //   src={`/assets/img/images/about_img_shape01.png`}
-
-                  alt=""
-                />
+                <img src={`/assets/img/images/about_img_shape01.png`} alt="" />
                 <img src="/assets/img/images/about_img_shape02.png" alt="" />
               </div>
             </div>

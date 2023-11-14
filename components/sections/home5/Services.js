@@ -73,10 +73,10 @@ export default function Services() {
                     <div className="icon">
                       <i className="flaticon-briefcase" />
                     </div>
-                    <h2 className="title">1</h2>
+                    <h2 className="title">Lorem ipsum dolor sit amet.</h2>
                   </div>
                   <div className="services-thumb">
-                    <img src="/assets/img/services/Studying-amico.png" alt="" />
+                    <img src="/assets/img/services/services_img01.jpg" alt="" />
                     <Link
                       href="/services-details"
                       className="btn transparent-btn"
@@ -100,13 +100,10 @@ export default function Services() {
                     <div className="icon">
                       <i className="flaticon-taxes" />
                     </div>
-                    <h2 className="title">2</h2>
+                    <h2 className="title">Lorem ipsum dolor sit amet.</h2>
                   </div>
                   <div className="services-thumb">
-                    <img
-                      src="/assets/img/services/Web-search-rafiki.png"
-                      alt=""
-                    />
+                    <img src="/assets/img/services/services_img02.jpg" alt="" />
                     <Link
                       href="/services-details"
                       className="btn transparent-btn"
@@ -130,13 +127,10 @@ export default function Services() {
                     <div className="icon">
                       <i className="flaticon-money" />
                     </div>
-                    <h2 className="title">3</h2>
+                    <h2 className="title">Lorem ipsum dolor sit amet.</h2>
                   </div>
                   <div className="services-thumb">
-                    <img
-                      src="/assets/img/services/Code-typing-bro.png"
-                      alt=""
-                    />
+                    <img src="/assets/img/services/services_img03.jpg" alt="" />
                     <Link
                       href="/services-details"
                       className="btn transparent-btn"
@@ -152,7 +146,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            {/* 4 */}
+            {/*            
             <div className="col-lg-4">
               <div className="services-item">
                 <div className="services-content">
@@ -179,7 +173,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            {/* 5 */}
+          
             <div className="col-lg-4">
               <div className="services-item">
                 <div className="services-content">
@@ -206,7 +200,7 @@ export default function Services() {
                 </div>
               </div>
             </div>
-            {/* 6 */}
+           
             <div className="col-lg-4">
               <div className="services-item">
                 <div className="services-content">
@@ -235,7 +229,7 @@ export default function Services() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </Slider>
         </div>
       </section>
