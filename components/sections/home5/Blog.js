@@ -29,7 +29,7 @@ export default function Blog() {
                 <div className="blog-post-thumb">
                   <Link href="/blog-details">
                     <img
-                      src="/assets/img/blog/Picture1.png"
+                      src="/assets/img/blog/Picture1.jpg"
                       alt=""
                       height="350px"
                     />
@@ -67,7 +67,7 @@ export default function Blog() {
                 <div className="blog-post-thumb">
                   <Link href="/blog-details">
                     <img
-                      src="/assets/img/blog/Picture2.png"
+                      src="/assets/img/blog/Picture2.jpg"
                       alt=""
                       height="350px"
                     />
@@ -103,7 +103,7 @@ export default function Blog() {
                 <div className="blog-post-thumb">
                   <Link href="/blog-details">
                     <img
-                      src="/assets/img/blog/Picture3.png"
+                      src="/assets/img/blog/Picture3.jpg"
                       alt=""
                       height="350px"
                     />
