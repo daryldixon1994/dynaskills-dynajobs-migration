@@ -17,7 +17,7 @@ export default function MainSlider() {
         <Slider {...settings} className="slider-active">
           <div
             className="single-slider slider-bg"
-            data-background="/assets/img/banner/banner_bg.jpg"
+            data-background="/assets/img/banner/Upskilling.jpg"
           >
             <div className="container">
               <div className="row">
@@ -73,7 +73,7 @@ export default function MainSlider() {
 
           <div
             className="single-slider slider-bg"
-            data-background="/assets/img/banner/banner_bg02.jpg"
+            data-background="/assets/img/banner/dynaskills_Platform1.png"
           >
             <div className="container">
               <div className="row">
@@ -130,7 +130,7 @@ export default function MainSlider() {
 
           <div
             className="single-slider slider-bg"
-            data-background="/assets/img/banner/banner_bg.jpg"
+            data-background="/assets/img/banner/thumbnail_Web.jpg"
           >
             <div className="container">
               <div className="row">
@@ -143,13 +143,13 @@ export default function MainSlider() {
                     >
                       We Are Expert In This Field
                     </span>
-                    <h2
+                    {/* <h2
                       className="title"
                       data-animation="fadeInUp"
                       data-delay=".4s"
                     >
                       Industry 4.0
-                    </h2>
+                    </h2> */}
                     <p data-animation="fadeInUp" data-delay=".6s">
                       The digital transformation is advancing! <br />
                       What do I need to do to ensure my team keeps up? <br />
