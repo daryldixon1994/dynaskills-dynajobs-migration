@@ -10,7 +10,7 @@ export default function Features() {
                 <div className="features-content">
                   <div className="content-top">
                     <div className="icon">
-                      <i className="flaticon-trophy" />
+                      <i className="flaticon-rocket" />
                     </div>
                     <h2 className="title">Upskilling Your Career</h2>
                   </div>

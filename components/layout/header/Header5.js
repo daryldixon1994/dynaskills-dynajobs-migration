@@ -93,7 +93,7 @@ export default function Header5({
                   <nav className="menu-nav ">
                     <div className="logo">
                       <Link href="/">
-                        <img src="/assets/img/logo/logo2.png" alt="Logo"  />
+                        <img src="/assets/img/logo/logo2.png" alt="Logo" />
                       </Link>
                     </div>
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
@@ -119,8 +119,8 @@ export default function Header5({
                           </ul> */}
                         </li>
                         <li>
-                          <Link href="#">About Us</Link>
-                          <ul className="sub-menu">
+                          <Link href="/about">About Us</Link>
+                          {/* <ul className="sub-menu">
                             <li>
                               <Link href="/about">About One</Link>
                             </li>
@@ -136,7 +136,7 @@ export default function Header5({
                             <li>
                               <Link href="/about-5">About Five</Link>
                             </li>
-                          </ul>
+                          </ul> */}
                         </li>
                         <li className="menu-item-has-children">
                           <Link href="#">Our Services</Link>
